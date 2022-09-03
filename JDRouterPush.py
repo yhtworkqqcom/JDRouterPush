@@ -364,7 +364,7 @@ def main():
     if GlobalVariable.RECORDSNUM.isdigit():
         GlobalVariable.records_num = int(GlobalVariable.RECORDSNUM)
     resolveDeviceName(GlobalVariable.DEVICENAME)
-    checkForUpdates()
+    #checkForUpdates()
     todayPointIncome()
     pinTotalAvailPoint()
     todayPointDetail()
