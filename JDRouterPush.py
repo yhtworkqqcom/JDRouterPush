@@ -297,14 +297,14 @@ def push(title,content):
         normalContent = NoticeTemplate.normalTemplate().format(**content)
 
     NoticePush.server_push(title, markdownContent.replace("- ***", "```"))
-    NoticePush.push_plus(title, markdownContent)
+    #NoticePush.push_plus(title, markdownContent)
         # print("标题->", title)
         # print("内容->\n", markdownContent)
 
 
-    NoticePush.telegram_bot(title, normalContent)
-    NoticePush.bark(title, normalContent)
-    NoticePush.enterprise_wechat(title, normalContent)
+    #NoticePush.telegram_bot(title, normalContent)
+    #NoticePush.bark(title, normalContent)
+    #NoticePush.enterprise_wechat(title, normalContent)
 
 
     # 信息输出测试
